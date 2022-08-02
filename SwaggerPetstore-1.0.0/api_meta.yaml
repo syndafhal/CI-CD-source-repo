@@ -1,0 +1,7 @@
+deploy:
+  import:
+    preserveProvider: true
+    rotateRevision: false
+    update: true
+name: SwaggerPetstore-OpenAPI3.0
+version: 1.0.11
