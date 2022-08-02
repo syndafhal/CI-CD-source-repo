@@ -66,7 +66,7 @@ environment {
                         version=${versionId[1]}
                         for file in upload/*; do
                             echo "Uploading "$file
-                            curl -u synda.fhal@gmail.com:Synda_fhal8 -X PUT https://server22/artifactory/myrepo/$i/$version/ -T $file
+                            curl -u synda:Sinda-sinda2 -X PUT https://server2.jfrog.io/artifactory/repo/$i/$version/ -T $file
                         done
                         rm -rf upload
                     done
