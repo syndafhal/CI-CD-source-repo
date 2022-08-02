@@ -17,8 +17,8 @@ environment {
         
         stage('Preparation') {
             steps{
-                git branch: "master",
-                url: 'https://github.com/syndafhal/ci-cd-source.git'
+                git branch: "main",
+                url: 'https://github.com/syndafhal/pipeline-source.git'
             }
         }
 
