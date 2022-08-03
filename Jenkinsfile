@@ -50,6 +50,11 @@ environment {
                 apictl login dev -u admin -p admin -k
                 apis=$(apictl vcs status -e dev --format="{{ jsonPretty . }}" | jq -r '.API | .[] | .NickName')
                 mkdir -p upload
+                if [ -z "$apis" ]; 
+                then 
+                    echo "======== No API Changes detected =========="; 
+                else 
+                    echo "Updated APIs :"$apis
                 
              
                 '''
