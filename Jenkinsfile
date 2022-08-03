@@ -55,6 +55,7 @@ environment {
                     echo "======== No API Changes detected =========="; 
                 else 
                     echo "Updated APIs :"$apis
+                fi    
                 
              
                 '''
