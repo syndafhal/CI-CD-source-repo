@@ -68,6 +68,9 @@ environment {
                         echo $versionId
                         version=${versionId[1]}
                         echo $version
+                        for file in upload/*; do
+                            echo "Uploading "$file
+                        done    
                 done
                 
              
