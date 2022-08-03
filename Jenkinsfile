@@ -43,5 +43,13 @@ environment {
                 '''
             }
         }
-
+        
+ stage('Build api bundles and upload') {
+            steps {
+                sh '''#!/bin/bash
+                apictl login dev -u admin -p admin -k
+             
+                '''
+            }
+        }
     }}
