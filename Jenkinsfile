@@ -71,11 +71,30 @@ environment {
                         for file in upload/*; do
                             echo "Uploading "$file
                             curl -u synda:Sinda-sinda2 -X PUT https://server2.jfrog.io/artifactory/repo/$i/$version/ -T $file
-                        done    
+                        done  
+                            rm -rf upload
                 done
                 
              
                 '''
             }
         }
-    }}
+          stage('Update local repo') {
+            steps {
+                sh '''#!/bin/bash
+                idFull=$(cat vcs.yaml)
+                arrId=(${idFull//: / })
+                repoId=${arrId[1]}
+                head=$(git rev-parse HEAD)
+                rm /var/lib/jenkins/workspace/gitconfig
+                echo "
+repos:
+  $repoId:
+    environments:
+       dev:
+        lastAttemptedRev: $head" >> /var/lib/jenkins/workspace/gitconfig
+                '''
+            }
+        }
+    }   
+}
