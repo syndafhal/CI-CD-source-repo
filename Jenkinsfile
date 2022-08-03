@@ -56,7 +56,11 @@ environment {
                 else 
                     echo "Updated APIs :"$apis
                 fi    
-                
+                apiArray=($apis)
+                    for i in "${apiArray[@]}"
+                    do
+                        echo "$i"
+                done
              
                 '''
             }
