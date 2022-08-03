@@ -60,7 +60,9 @@ environment {
                     for i in "${apiArray[@]}"
                     do
                         echo "$i"
+                        apictl bundle -s $i -d upload
                 done
+                
              
                 '''
             }
