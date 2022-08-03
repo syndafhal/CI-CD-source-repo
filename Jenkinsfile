@@ -61,6 +61,10 @@ environment {
                     do
                         echo "$i"
                         apictl bundle -s $i -d upload
+                        # get the artifact deploy version from the meta.yaml
+                        versionFull=$(cat $i/meta.yaml)
+                        versionId=(${versionFull//: / })
+                        version=${versionId[1]}
                 done
                 
              
