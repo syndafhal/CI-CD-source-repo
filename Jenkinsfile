@@ -52,7 +52,7 @@ environment {
                 mkdir -p upload
                 if [ -z "$apis" ]; 
                 then 
-                    echo "======== No API Changes detected =========="; 
+                    echo "======== No APIChanges detected =========="; 
                 else 
                     echo "Updated APIs :"$apis
                 fi    
