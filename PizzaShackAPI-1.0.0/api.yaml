@@ -9,7 +9,7 @@ data:
   provider: admin
   lifeCycleStatus: PUBLISHED
   responseCachingEnabled: false
-  cacheTimeout: 300
+  cacheTimeouut: 300
   hasThumbnail: false
   isDefaultVersion: false
   isRevision: false
