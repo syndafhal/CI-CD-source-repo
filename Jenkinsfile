@@ -65,8 +65,10 @@ environment {
                         versionFull=$(cat $i/meta.yaml)
                         echo ok
                         echo $versionFull
+                        echo ok
                         versionId=(${versionFull//: / })
                         echo $versionId
+                        echo ok
                         version=${versionId[2]}
                         echo $version
                         for file in upload/*; do
