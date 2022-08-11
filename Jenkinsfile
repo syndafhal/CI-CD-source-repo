@@ -69,7 +69,7 @@ environment {
                         versionId=(${versionFull//: / })
                         echo $versionId
                         echo ok
-                        version=${versionId[2]}
+                        version=${versionId[1]}
                         echo $version
                         for file in upload/*; do
                             echo "Uploading "$file
