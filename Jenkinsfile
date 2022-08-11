@@ -72,7 +72,7 @@ environment {
                             echo "Uploading "$file
                             curl -u synda:Sinda-sinda2 -X PUT https://server2.jfrog.io/artifactory/repo/$i/$version/ -T $file
                         done  
-                            rm -rf upload
+                            #rm -rf upload
                 done
                 
              
