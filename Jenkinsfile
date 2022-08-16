@@ -45,7 +45,7 @@ environment {
 
             steps {
          sh '''#!/bin/bash
-         declare -i x=0
+         
           
          
 
@@ -73,8 +73,7 @@ environment {
         else
             echo $message
         fi
-        x=$((x+1))
-        echo $x
+        
         
         
         
