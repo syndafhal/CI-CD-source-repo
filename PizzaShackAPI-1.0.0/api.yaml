@@ -5,7 +5,7 @@ data:
   name: PizzaShackAPI
   description: This is a simple API for Pizza Shack online pizza delivery store.
   context: /pizzashack
-  version: 4.0.1
+  version: 4.0.2
   provider: admin
   lifeCycleStatus: PUBLISHED
   responseCachingEnabled: false
