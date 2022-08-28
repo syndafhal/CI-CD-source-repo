@@ -77,8 +77,6 @@ environment {
                         done  
                             #rm -rf upload
                 done
-                
-             
                 '''
             }
         }
